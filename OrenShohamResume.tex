@@ -1,0 +1,172 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[5]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4} \\ \smallskip
+			{#5}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Oren Shoham}{https://github.com/oshoham}{315 Troutman St., Brooklyn, NY 11237}{orenavrahamshoham@gmail.com}{(713) 408-9422}
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Oberlin College}{} \hfill \emph{September 2010 - May 2014}{} \\
+	B.A. in Computer Science \\
+	GPA --- Overall: 3.7/ Computer Science: 3.75 \\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Technical Skills
+\header{Technical Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Languages:}}{} 
+		\begin{itemize} \itemsep -0pt  % reduce space between items
+			\item \textbf{Most Familiar:} Python, Javascript, Ruby, HTML/CSS
+			\item \textbf{Have Used for Fun or School:} C, Java, C\#, Bash, Scheme, \LaTeX \\
+		\end{itemize}
+	\medskip
+	\emph{\textbf{Frameworks:}}{} Django, Rails, Backbone, Ember \\
+	\medskip
+	\emph{\textbf{Databases:}}{} PostgreSQL, MongoDB \\
+	\medskip
+	\emph{\textbf{Tools:}}{} Unix, Vim/Sublime Text, Git, Unity3D \\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Awards and Honors}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Nu Rho Psi}: National Honor Society in Neuroscience, Oberlin College \hfill{} \emph{Spring 2013 - Present}\\
+	\smallskip
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Experience}
+
+\begin{body}
+	\vspace{14pt}
+
+	\textbf{Software Developer}, \emph{DecisionDesk} \hfill \emph{July 2014 - Present}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Educational technology SaaS startup creating applicant management software for higher education institutions.
+		\item Full-stack responsibilities using Rails, Ember, and PostgreSQL, as well as Django, Backbone, and MongoDB (for a legacy product).
+		\item Built single-page web apps for applying to schools, reviewing applications, and managing the admissions process.
+		\item Implemented a REST API for managing application data.
+		\item Gained familiarity with testing tools (RSpec, pytest) and TDD, devops tools (Chef, Vagrant) and infrastructure best practices, and AWS (S3, EC2, IAM).
+	\end{itemize}
+
+	\textbf{Algorithms TA}, \emph{Oberlin College CS Department} \hfill \emph{Fall 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Ran bi-weekly Oberlin Workshop and Learning Sessions (OWLS) for the Fall 2013 Introduction to Algorithms course along with a co-instructor.
+		\item Facilitated peer-to-peer learning sessions in which students worked collaboratively to improve their understanding of algorithms topics such as greedy algorithms, dynamic programming, network flows, and computational complexity.
+	\end{itemize}
+
+	\textbf{Software Developer}, \emph{Prestissimo (oprestissimo.com)} \hfill \emph{June 2013 - August 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Student-created search engine for the  Oberlin College course catalog.
+		\item Full-stack responsibilities using Rails, Bootstrap, and MySQL.
+		\item Improved the speed of course searching by rewriting the Javascript code responsible for populating the UI with the results of database queries.
+		\item Updated the search interface and the structure of the site's database to account for changes in Oberlin College's course credit system.
+		\item Wrote shell scripts and Rake tasks for parsing raw course data received from Oberlin College.
+	\end{itemize}
+
+	\textbf{Neuroscience Researcher}, \emph{Oberlin College Neuroscience Department} \hfill \emph{February 2013 - May 2014}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Worked in Prof. Michael Loose's research lab studying decision making in two-choice gambling tasks using EEG data and mathematical modeling.
+		\item Participated in the design and execution of several behavioral experiments.
+		\item Analyzed behavioral data using an artificial neural network.
+	\end{itemize}
+\end{body}
+
+\end{document}
