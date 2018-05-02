@@ -1,4 +1,5 @@
 \documentclass[9pt]{article}
+\usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -48,7 +49,7 @@
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{center}
 			{\Large \scshape {#1}}\\ \smallskip
-			{#2}\\ \smallskip 
+			{#2}\\ \smallskip
 			{#3}\\ \smallskip
 			{#4}\smallskip
 		\end{center}
@@ -58,13 +59,13 @@
 \newenvironment{body} {
 	\vspace*{-16pt}
 	\begin{changemargin}{-0.25in}{-0.5in}
-  }	
+  }
 	{\end{changemargin}
-}	
+}
 
 \newcommand{\school}[4]{
 	\textbf{#1} \hfill \emph{#2\\}
-	#3\\ 
+	#3\\
 	#4\\
 }
 
@@ -87,67 +88,59 @@
 \begin{body}
 	\vspace{14pt}
 
-	\textbf{Contractor/Lead Developer}, \emph{Montage Videos, Inc.} \hfill  \emph{September 2016 - present}\\
+	\textbf{Consultant/Full-Stack Developer}, \emph{Paloma Works PBC} \hfill  \emph{July 2017 - November 2017}\\
+	\emph{Paloma creates software for sending marketing campaigns over Facebook Messenger.}
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Built an MVP of a web editor for designing conversation flows for Facebook Messenger bots using React, Redux, and Flask.
+		\item Set up integrations with Facebook APIs to send messages to users and import Facebook pages' conversation histories.
+	\end{itemize}
+
+	\textbf{Consultant/Lead Developer}, \emph{Montage Videos, Inc.} \hfill  \emph{September 2016 - May 2017}\\
 	\emph{Montage is a web service that allows users to create collaborative video gifts for their loved ones.}
 	\vspace*{-4pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Set up an automated video processing workflow using Celery and AWS EC2.
-		\item Built a React frontend for creating, managing, and compiling video montages.
+	    \item Built a React web app and Flask API for creating, managing, and sharing collaborative video montages.
+		\item Created an automated video post-processing system using MoviePy, Flask, Celery and AWS EC2.
 	\end{itemize}
 
 	\textbf{Front-End Developer}, \emph{Uplevel Security} \hfill \emph{April 2016 - June 2016}\\
-	\emph{Uplevel Security is an early-stage startup creating graph-based cybersecurity threat analysis software.}
+	\emph{Uplevel Security is a cybersecurity startup creating graph-based threat analysis software.}
 	\vspace*{-4pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Designed and implemented network data visualizations in D3.js and React.
-		\item Assisted other developers with React/Redux best practices.
-		\item Set up front-end testing infrastructure and wrote several suites of integration tests.
-	\end{itemize}
-
-	\textbf{Participant}, \emph{Recurse Center} \hfill  \emph{January 2016 - March 2016}\\
-	\emph{The Recurse Center (formerly Hacker School) is a free, self-directed, educational retreat for people who want to get better at programming.}
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Learned WebGL and basics of 3D graphics programming.
-		\item Built a browser-based music visualizer using the Web Audio API, Canvas, and SoundCloud's public API.
-		\item Explored data visualization and geographic mapping with D3.
-		\item Built a web app that sends and receives text as high-frequency audio using the Web Audio API and React.
+		\item Designed and built network data visualizations in D3.js and React.
+		\item Set up front-end testing infrastructure and wrote suites of integration tests.
 	\end{itemize}
 
 	\textbf{Full-Stack Developer}, \emph{DecisionDesk} \hfill \emph{July 2014 - December 2015}\\
-	\emph{DecisionDesk is an educational technology SaaS startup creating applicant management software for higher education institutions.}
+	\emph{DecisionDesk was an educational technology SaaS startup that made applicant management software for higher education institutions.}
 	\vspace*{-4pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Built single-page web apps for applying to schools, reviewing applications, and managing the admissions process, using Ember.js and subsequently React.
-		\item Built a RESTful JSON API for managing school application data using Rails and PostgreSQL.
-		\item Maintained a legacy product built with Django, Backbone, and MongoDB.
-		\item Gained familiarity with testing tools (RSpec, pytest) and TDD, devops tools (Chef, Vagrant),  and AWS infrastructure (S3, EC2, IAM).
+		\item Built single-page web apps for applying to schools, reviewing applications, and managing the admissions process, using Ember.js, React, and Ruby on Rails.
+		\item Maintained a legacy product built with Backbone.js and Django.
 	\end{itemize}
-
-	\textbf{Neuroscience Researcher}, \emph{Oberlin College Neuroscience Department} \hfill 				\emph{February 2013 - May 2014}\\
-         \vspace*{-4pt}
-         \begin{itemize} \itemsep -0pt  % reduce space between items
-                \item Worked in Prof. Michael Loose's research lab studying decision making in two-choice gambling tasks using EEG data and mathematical modeling.
-                \item Analyzed behavioral data using an artificial neural network written in Java.
-        \end{itemize}
 \end{body}
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Technical Skills
-\header{Technical Skills}
+\header{Skills}
 
 \begin{body}
 	\vspace{14pt}
-	\textbf{Languages:}{} 
+	\textbf{Programming Languages:}{}
 		\begin{itemize} \itemsep -0pt  % reduce space between items
-			\item \textbf{Most Familiar:} JavaScript, Python, C++, Ruby, HTML/CSS
-			\item \textbf{Have Used for Fun or School:} C, Java, Scheme, C\#, Bash, \LaTeX \\
+			\item \textbf{Proficient:} JavaScript, Python,  HTML/CSS, GLSL
+			\item \textbf{Familiar:} C, C++, Java, Ruby, Scheme, C\#, Bash, \LaTeX \\
 		\end{itemize}
 	\smallskip
-	\textbf{Frameworks/Libraries:}{} P5.js, openFrameworks, Rails, Django, React, Ember.js, D3, WebGL, Web Audio API \\
+	\textbf{Web Development:}{} React/Redux, Flask, Django, Ruby on Rails, Ember.js, D3.js \\
+	\smallskip
+	\textbf{Creative Coding:}{} openFrameworks, Max/MSP/Jitter, Processing, P5.js, WebGL, regl.js, Tone.js \\
 	\smallskip
 	\textbf{Databases:}{} PostgreSQL, MongoDB \\
+	\smallskip
+	\textbf{Devops:}{} Ansible, Docker, AWS EC2, AWS S3, Travis CI \\
 	\smallskip
 	\textbf{Hardware:}{} Arduino, Raspberry Pi \\
 \end{body}
@@ -160,7 +153,14 @@
 
 \begin{body}
 	\vspace{14pt}
+	\textbf{NYU Interactive Telecommunications Program}{} \hfill \emph{September 2017 - Present}{} \\
+	M.P.S.
+	\smallskip
+
 	\textbf{The School for Poetic Computation}{} \hfill \emph{June 2016 - August 2016}{} \\
+	\smallskip
+
+	\textbf{The Recurse Center}{} \hfill \emph{January 2016 - March 2016}{} \\
 	\smallskip
 
 	\textbf{Oberlin College}{} \hfill \emph{September 2010 - May 2014}{} \\
